@@ -1,0 +1,68 @@
+*
+{
+	margin: 0;
+	padding:0;
+	font-size: 16px;
+}
+
+body
+{
+	background: #D8D8D8;
+}
+
+.btn
+{
+	background: #1C1C1C;
+	border: 1px solid #A4A4A4;
+	border-radius: 5px;
+	color: #FAFAFA;
+	cursor: pointer;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+}
+
+.btn:hover
+{
+	transition: .5s;
+	background: #2E2E2E;
+}
+.contenedor
+{
+
+	background: #F2F2F2;
+	border-radius: 5px;
+	margin: 20px auto;
+	padding: 90px;
+	width: 50%;
+}
+
+.etiqueta
+{
+	display: block;
+	font-family: "Roboto";
+
+}
+.form
+{
+	margin: auto;
+	padding: 0 8em;
+	width: 100%;
+}
+
+.texto
+{
+	border: 1px solid #424242;
+	border-radius: 5px;
+	font-family: "Roboto";
+	margin: 10px auto;
+	padding: 5px 10px;
+	width: 50%;
+}
+.titulo2
+{
+	font-family: "Roboto";
+	font-size: 20px;
+	padding: 20px 200px;
+}

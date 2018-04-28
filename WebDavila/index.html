@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="Description" content="Esta es la pagina de inicio de mi proyeto de PAI">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Inicio de pagina prrona</title>
+	<link rel="shortcut icon" href="IMG/tree.png" type=”image/x-icon”  />
+	<title>Carpinteria la Parota</title>
 
-	<link rel="stylesheet" href="Css/estilos.css">
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="Css/estilos.css" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/>
 </head>
 <body>
 
@@ -20,9 +21,9 @@
 		</div>
 		<nav class="menu-nav">
 			<a href="#" class="item">Productos</a>
-			<a href="#" class="item">Cotizacion</a>
+			<a href="cotizacion.html" class="item">Cotizacion</a>
 			<a href="#" class="item">Galeria de Imagenes</a>
-			<a href="#" class="item">Acerca de Nosotros</a>
+			<a href="acercaDe.html" class="item">Acerca de Nosotros</a>
 		</nav>
 		<div class="login"> 
 			<a href="LoginUser.html" class="item">Iniciar sesión</a>
@@ -30,26 +31,34 @@
 		</div>
 	</header>
 
-	<div class="cuerpo wrapper">
+	<div class="contain cuerpo wrapper">
 		<div class="ttlBody">
 			<h2 class="ttl2">La Parota</h2>
 			<p>Con esfuerzo y dedicacion</p>
 		</div>
 
-		<div class="nuevo">
-			<div class="mesa">
+		<div style="margin:inherit;">
+			<h2>Lo nuevo de este mes</h2>
+			<div id ="mesa" class="sect">
 				<h3 class="ttl3">Mesas</h3>
+				<a href="#" class="btn-link">Ver Mas</a>
 			</div>
 
-			<div class="cama">
-				<h3 class="ttl3">Bases de cama y camas</h3>
+			<div id ="cama" class="sect">
+				<h3 class="ttl3">Camas</h3>
+				<a href="#" class="btn-link">Ver Mas</a>
+			</div>
+
+			<div id="trastero" class="sect">
+				<h3 class="ttl3">Trasteros</h3>
+				<a href="#" class="btn-link">Ver Mas</a>
 			</div>
 		</div>
 
 	</div>
 	
-	<footer class="contactos">
-		<div class="wrapper">
+	<footer class="contactos footer">
+			<div class="wrapper2">
 
 		<div class="lugar">
 			<strong>Donde encontrarnos</strong>

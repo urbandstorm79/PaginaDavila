@@ -1,40 +1,50 @@
-*
+html, body
 {
 	margin: 0;
-	padding:0;
+	padding: 0;
+	height: 100%;
 	font-size: 16px;
-}
-
-body
-{
-	background: #D8D8D8;
 }
 
 .btn
 {
 	background: #1C1C1C;
-	border: 1px solid #A4A4A4;
-	border-radius: 5px;
+	border: 0.5px solid #1C1C1C;
+	border-radius: 6px;
 	color: #FAFAFA;
 	cursor: pointer;
 	display: block;
+	font-size: 18px;
+	height: 40px;
+	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 5px 10px;
+	outline: 0;
+	text-decoration: none;
+	width: 150px;
 }
 
 .btn:hover
 {
+
 	transition: .5s;
-	background: #2E2E2E;
+	background: #0B610B;
+	border: 0.5px solid #0B610B;
 }
 .contenedor
 {
 
-	background: #D8D8D8;
-	margin: 20px auto;
-	padding: 100px 100px;
+	background:#FAFAFA;
+	margin: auto;
+	padding: 10px 0;
 	width: 60%;
+
+}
+
+.cont
+{
+	margin:0 auto;
 }
 
 .etiqueta
@@ -45,16 +55,54 @@ body
 }
 .form
 {
-	margin: auto;
-	padding:0 200px;
+	margin: auto 10px;
 	width: 100%;
+}
+.formDiv
+{
+	margin: auto;
+	margin-left: 200px;
+	width: 100%;
+}
+
+.select
+{
+	background: #f2f2f2;
+	border: 2px solid #000;
+	font-size: 16px;
+	height: 34px;
+	margin: 10px auto;
+	overflow: hidden;
+	padding: 5px 10px;
+
+}
+
+.select:hover
+{
+	border: 2px solid #0B6121;
+}
+
+.select-form
+{
+	width: 50%;
+}
+
+.slct-round
+{
+	border-radius: 5px;
+}
+.slct-btn
+{
+	-webkit-appearance: button;
+	appearance:button;
 }
 
 .texto
 {
-	border: 1px solid #424242;
+	border: 1px solid #D8D8D8;
 	border-radius: 5px;
 	font-family: "Roboto";
+	font-size: 16px;
 	margin: 10px auto;
 	padding: 5px 10px;
 	width: 50%;
@@ -64,4 +112,35 @@ body
 	font-family: "Roboto";
 	font-size: 20px;
 	padding: 20px 200px;
+}
+
+
+@media screen and (max-width: 900px)  {
+
+	.formDiv
+	{
+		margin-left: 50px;
+	}
+
+	.titulo2
+	{
+		
+		padding: 20px 110px;
+	}
+
+	.texto
+	{
+		width: 60%;
+	}
+	
+ 	.contenedor
+ 	{
+
+ 		background: red;
+ 		margin: auto;
+ 		padding: 0;
+ 		width: 100%;
+	 }
+
+	
 }

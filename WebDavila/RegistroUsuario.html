@@ -7,18 +7,23 @@
 	<link rel="stylesheet" href="Css/estiloUser.css">
 	<link rel="stylesheet" href="Css/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+	<script src="JS/validar.js"></script>
+
 
 	<title>Registro de nuevo usuario</title>
 </head>
 <body>
 	<header class="head">
-		<div class="logo"><a href="index.html" class="logo">PaginaPrrona</a></div>
+		<div class="logo">
+			<a href="index.html"><img src="IMG/tree.png" alt="Carpinteria la parota" class="logoImg"></a>
+			<a href="index.html" class="ttlHdr">Carpinteria La Parota</a>
+
+		</div>
 		<nav class="menu-nav">
-			<a href="#" class="item">item 1</a>
-			<a href="#" class="item">item 2</a>
-			<a href="#" class="item">item 3</a>
-			<a href="#" class="item">item 4</a>
-			<a href="#" class="item">item 4</a>
+			<a href="#" class="item">Productos</a>
+			<a href="cotizacion.html" class="item">Cotizacion</a>
+			<a href="#" class="item">Galeria de Imagenes</a>
+			<a href="acercaDe.html" class="item">Acerca de Nosotros</a>
 		</nav>
 		<div class="login"> 
 			<a href="LoginUser.html" class="item">Iniciar sesión</a>
@@ -27,18 +32,25 @@
 	</header>
 
 	<div class="contenedor">
-		<h2 class="titulo2">Ingresa y obten los beneficios</h2>
-		<form action="#" class="form">
-			<label class="etiqueta" for="nombreUsuario">Nombre de usuario</label> 
-			<input type="text" class="texto" name="nombreUsuario" placeholder="user4526">
-			<br />
+		
+		<form action="registrar.php" class="form" method="post" onsubmit="return validar();">
+			<h2 class="titulo2">Ingresa y obten los beneficios</h2>
+			<div class="formDiv">
+				<label class="etiqueta" for="nombreUsuario">Nombre de usuario</label> 
+				<input id="nombreUsuario" type="text" class="texto" name="nombreUsuario" placeholder="user4526" required>
+			</div>
+			
 
-			<label class="etiqueta" for="correoUsuario">Correo electrónico</label> 
-			<input type="email" class="texto" name="correoUsuario" placeholder="user@mail.com.mx">
-			<br/>
-			<label class="etiqueta" for="contraUsuario">Contraseña</label> 
-			<input type="password" class="texto" placeholder="Contraseña">
-			<br />
+			<div class="formDiv">
+				<label class="etiqueta" for="correoUsuario">Correo electrónico</label> 
+				<input id="correoUsuario" type="email" class="texto" name="correoUsuario" placeholder="user@mail.com.mx" required>
+			</div>
+			
+			<div class="formDiv">
+			<label class="etiqueta" for="pass">Contraseña</label> 
+			<input id="pass" type="password" class="texto" name="pass" placeholder="Contraseña" required>
+			</div>
+			
 
 			<button class="btn" type="submit">Crear cuenta</button>
 

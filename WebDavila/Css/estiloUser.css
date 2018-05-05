@@ -51,6 +51,7 @@ html, body
 {
 	display: block;
 	font-family: "Roboto";
+	
 
 }
 .form
@@ -130,13 +131,12 @@ html, body
 
 	.texto
 	{
-		width: 60%;
+		width: 80%;
 	}
 	
  	.contenedor
  	{
 
- 		background: red;
  		margin: auto;
  		padding: 0;
  		width: 100%;

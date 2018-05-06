@@ -41,9 +41,11 @@
 	
 	<div class="contenedor">
 		<div>
-			<form action="" method="post" onsubmit="return validaCotizacion()">
+			<form action="php/cotizar.php" method="post" onsubmit="return validaCotizacion()">
 				<h2 class="titulo2">Cotizador de precios</h2>
+				
 				<div class="formDiv">
+					<h3 class="titulo3">Información del pedido</h3>
 					<label for="producto"  class="etiqueta">Tipo de producto</label>
 					<select name="producto" id="producto" class="select select-form slct-round">
 						<option value="Mesa">Mesa</option>
@@ -59,8 +61,20 @@
 						<option value="pino">Pino</option>
 						<option value="encino">Encino</option>
 						<option value="parota">Parota</option>
-						<option value="huizache">Huizache</option>
+						<option value="cedro">Cedro</option>
 					</select>
+				</div>
+				<div class="formDiv">
+					<label for="alto" class="etiqueta">Alto (en metros)</label>
+					<input name="alto" type="number" class="texto" id="altoM" placeholder="0" required>
+				</div>
+				<div class="formDiv">
+					<label for="largo" class="etiqueta">Largo (en metros)</label>
+					<input name="largo" type="number" class="texto" id="largoM;" placeholder="0" required>
+				</div>
+				<div class="formDiv">
+					<label for="ancho" class="etiqueta">Ancho (en metros)</label>
+					<input name="ancho" type="number" class="texto" id="anchoM" placeholder="0" required>
 				</div>
 				<div class="formDiv">
 					<label for="cantidad" class="etiqueta">Cantidad</label>
@@ -68,8 +82,15 @@
 				</div>
 
 				<div class="formDiv">
+					<h3 class="titulo3">Información de Contacto</h3>
+					<label for="nombre" class="etiqueta">Nombre</label>
+					<input name="nombre" type="text" class="texto" id="nombre" placeholder="Nombre Completo" required>
+				</div>
+
+				<div class="formDiv">
+					
 					<label for="nomEmpresa" class="etiqueta">Empresa</label>
-					<input type="text" class="texto" id="nomEmpresa" name="nomEmpresa" placeholder="NombreEmpresa" required>
+					<input type="text" class="texto" id="nomEmpresa" name="nomEmpresa" placeholder="NombreEmpresa">
 				</div>
 				<div class="formDiv">
 					<label for="telefono" class="etiqueta">Telefono</label>

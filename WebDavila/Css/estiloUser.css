@@ -111,10 +111,12 @@ html, body
 .titulo2
 {
 	font-family: "Roboto";
-	font-size: 20px;
 	padding: 20px 200px;
 }
-
+.titulo3
+{
+	font-family: "Roboto", sans-serif;
+}
 
 @media screen and (max-width: 900px)  {
 

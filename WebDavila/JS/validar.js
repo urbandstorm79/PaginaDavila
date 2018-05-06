@@ -1,4 +1,4 @@
-var modal = document.getElementById("my-modal");
+/*var modal = document.getElementById("my-modal");
 var contenido = document.getElementById("info");
 var btn = document.getElementById("btnSubmit");
 var span = document.getElementsByClassName("close")[0];
@@ -14,7 +14,7 @@ function closeModal(){
 
 function openModal(){
 	modal.style.display = "block";
-}
+}*/
 
 
 function validar() {
@@ -45,19 +45,24 @@ function validar() {
 
 function validaCotizacion() {
 	
-	var producto, tipo, cantidad, correoE, nomEmpresa, telefono, expresion;
+	var producto, tipo, cantidad, correoE, nombre, nomEmpresa, telefono, expresion , precio, alto, largo, ancho;
 	producto = document.getElementById("producto").value;
 	tipo = document.getElementById("tipoMaterial").value;
+	alto = document.getElementById("altoM").value;
+	largo = document.getElementById("largoM").value;
+	ancho = document.getElementById("anchoM");
 	cantidad = document.getElementById("cantidad").value;
 	correoE = document.getElementById("correoE").value;
+	nombre = document.getElementById("nombre").value;
 	nomEmpresa = document.getElementById("nomEmpresa").value;
 	telefono = document.getElementById("telefono").value;
 	
 
 	expresion = /\w+@\w+\.+[a-z]/;
+	alert(tipo);
 
-	if (cantidad === ""|| correoE === ""||nomEmpresa ==="") {
-		alert("Llena todos los campos");
+	if (cantidad === ""|| correoE === ""|| nombre ==="" || alto==="" || largo===""||ancho==="") {
+		alert("Los campos obligatorios no deben quedar en blanco");
 		return false;
 	}else if(telefono.length !== 10){
 		alert("El Telefono debe de ser de 10 digitos");

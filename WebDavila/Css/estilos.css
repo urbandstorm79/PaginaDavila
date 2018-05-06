@@ -10,6 +10,27 @@ a{
 	text-decoration: none;
 }
 
+#cama
+{
+	background-image: url("../img/beseSencilla2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px;
+}
+#mesa{
+	background-image: url("../img/mesapequena.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px;
+}
+#trastero
+{
+	background-image: url("../img/trasteroAzul.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px;
+}
+
 .btn-link
 {
 	background: #2E2E2E; 
@@ -69,7 +90,9 @@ a{
 
 h1
 {
-	border-bottom: thin solid #848484;
+
+	font-family: 'Oswald', monospace;
+	text-align: center;
 }
 
 .head
@@ -163,9 +186,38 @@ h1
 
 /*   Modal Styles */
 
+.galeria
+{
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li
+{
+	margin: 5px;
+}
+
+.galeria img
+{
+	width: 300px;
+	height: 200px;
+}
+
 .modal
 {
-	display: none; /* Hidden by default */
+	display: none;
+}
+
+.modal:target
+{
+	display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -177,30 +229,70 @@ h1
      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal-content {
+.modal h3
+{
+	color: #fff;
+	font-size: 30px;
 	font-family: "Roboto";
-    background-color: #2E64FE;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+	text-align: center;
+	margin: 15px 0;
+}
 
+.imagen
+{
+	width: 100%;
+	height: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a
+{
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+
+}
+
+.imagen a:nth-child(2) /* Selecciona la segundo hijo de las a de la clase imagen  */
+{
+	margin:0;
+	height: 100%;
+	flex-shrink: 2;
+
+}
+
+.imagen img 
+{
+	width: 600px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
 }
 
 .close
 {
-	color: #aaa;
-	float: right;
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
 	font-family: "Roboto";
-	font-size: 28px;
-	font-weight: bold;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
 }
 
-.close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+
+
 
 /* ================*/
 
@@ -242,9 +334,7 @@ h1
 	display: inline;
 	float: left;
 	/*background: ;*/
-	background-image: url("../img/parotaB.jpg");
-	background-repeat: no-repeat;
-	background-position: center; 
+	
 	padding: 5px;
 	margin: 5px 0;
 	margin-left: 9px;
@@ -263,6 +353,12 @@ h1
 .text
 {
 	text-align: justify;
+}
+
+.ttlBody img
+{
+	width: 50%;
+	height: 25%;
 }
 
 .ttlHdr
@@ -303,7 +399,7 @@ h1
 
 	.imgLtl
 	{
-		width: 100px;
+		width: 200px;
 	}
 
 	.item:hover
@@ -346,7 +442,7 @@ h1
 	{
 		display: block;
 		margin: 5px ;
-		width: 200px;
+		width: 300px;
 	}
 
 	.ttlHdr

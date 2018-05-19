@@ -6,8 +6,19 @@ html, body
 	height: 100%;
 	font-size: 16px;
 }
+body
+{
+	background: #F3F3F3;
+}
 a{
 	text-decoration: none;
+}
+
+.activo
+{
+	color: #468B3B !important;
+
+
 }
 
 #cama
@@ -121,7 +132,7 @@ h1
 
 .icon:hover
 {
-	color: #0B6121;
+	color: #468B3B;/*#0B6121;*/
 }
 /*
 #fb:hover
@@ -143,6 +154,10 @@ h1
 {
 	border-radius: 50%;
 	width: 200px;
+}
+.img-w100
+{
+	width: 100%;
 }
 .line
 {

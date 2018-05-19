@@ -61,7 +61,7 @@ a{
 .cuerpo
 {
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 50px;
 	font-family: "Roboto";
 	text-align: justify;
 	padding-bottom: 100px;
@@ -76,7 +76,7 @@ a{
 
 .color-blanco
 {
-	color: #FFF;
+	color: #F2F2F2;
 }
 
 .footer
@@ -87,6 +87,8 @@ a{
 	margin-top: -100px;
 	clear: both;
 }
+
+
 
 h1
 {
@@ -101,13 +103,42 @@ h1
 	background: #1C1C1C;
 	font-family: "Roboto";
 	width: 100%;
-	line-height: 100px;
+	line-height: 50px;
 	margin: auto;
 	overflow: hidden;
+	position: fixed;
+	z-index: 1;
 	
 
 }
 
+.icon
+{
+	font-size: 50px;
+	text-decoration: none;
+	color: white;
+}
+
+.icon:hover
+{
+	color: #0B6121;
+}
+/*
+#fb:hover
+{
+	color: #3b5998
+}
+
+#tw:hover
+{
+	color: #00aced;
+}
+
+#google:hover
+{
+	color: #d34836;
+}
+*/
 .imgLtl
 {
 	border-radius: 50%;
@@ -115,9 +146,16 @@ h1
 }
 .line
 {
-	display: inline-table;
+	display: flex;
 	float: left;
-	padding-right: 50px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-right: 100px;
+}
+
+.line div
+{
+	margin-left:10px;
 }
 
 .line-left
@@ -167,7 +205,7 @@ h1
 .logoImg
 {
 	float: left;
-	margin: 35px 5px;
+	margin: 10px 5px;
 }
 
 .login
@@ -210,6 +248,11 @@ h1
 	height: 200px;
 }
 
+.galeria img:hover
+{
+	opacity: .8;
+}
+
 .modal
 {
 	display: none;
@@ -235,13 +278,15 @@ h1
 	font-size: 30px;
 	font-family: "Roboto";
 	text-align: center;
-	margin: 15px 0;
+	margin: 100px 0 0 0;
 }
 
 .imagen
 {
 	width: 100%;
 	height: 50%;
+
+	margin-top: 10px;
 
 	display: flex;
 	justify-content: center;
@@ -256,6 +301,7 @@ h1
 	margin: 0 10px;
 
 }
+
 
 .imagen a:nth-child(2) /* Selecciona la segundo hijo de las a de la clase imagen  */
 {
@@ -370,7 +416,7 @@ h1
 .wrapper
 {
 	margin: auto;
-	padding-top: 90px;
+	padding-top: 45px;
 	width: 60%;
 
 

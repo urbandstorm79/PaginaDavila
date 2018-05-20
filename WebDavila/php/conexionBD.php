@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, "BDPedidos");
+$conn = new mysqli($servername, $username, $password, "bdproductos");
 
 // Check connection
 if ($conn->connect_error) {

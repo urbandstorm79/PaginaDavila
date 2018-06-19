@@ -32,38 +32,40 @@ html, body
 	background: #0B610B;
 	border: 0.5px solid #0B610B;
 }
+.card
+{
+	
+	display: flex;
+	box-shadow: 1px .5px 10px #000;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+	min-height: 350px;
+	width: 500px;
+	
+}
+
 .contenedor
 {
 
 	background:#F2F2F2;
 	margin: auto;
-	padding: 10px 0;
-	width: 60%;
+	padding: 100px 0;
+	overflow: hidden;
+	font-family: 'Roboto';
+
+	
+
 
 }
 
-.cont
-{
-	margin:0 auto;
-}
+
 
 .etiqueta
 {
 	display: block;
 	font-family: "Roboto";
-	
-
-}
-.form
-{
-	margin: auto 10px;
-	width: 100%;
-}
-.formDiv
-{
-	margin: auto;
-	margin-left: 200px;
-	width: 100%;
 }
 
 .select
@@ -104,45 +106,15 @@ html, body
 	border-radius: 5px;
 	font-family: "Roboto";
 	font-size: 16px;
-	margin: 10px auto;
-	padding: 5px 10px;
-	width: 50%;
+	padding: 5px;
+	margin: 5px 0;
+	width: 100%;
 }
-.titulo2
-{
-	font-family: "Roboto";
-	padding: 20px 200px;
-}
-.titulo3
-{
-	font-family: "Roboto", sans-serif;
-}
+
 
 @media screen and (max-width: 900px)  {
 
-	.formDiv
-	{
-		margin-left: 50px;
-	}
 
-	.titulo2
-	{
-		
-		padding: 20px 110px;
-	}
-
-	.texto
-	{
-		width: 80%;
-	}
-	
- 	.contenedor
- 	{
-
- 		margin: auto;
- 		padding: 0;
- 		width: 100%;
-	 }
 
 	
 }

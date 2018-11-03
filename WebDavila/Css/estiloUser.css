@@ -41,9 +41,18 @@ html, body
 	justify-content: space-around;
 	align-items: center;
 	margin: auto;
+	
+}
+
+.card-small
+{
 	min-height: 350px;
 	width: 500px;
-	
+}
+.card-mid
+{
+	min-height: 500px;
+	width: 90%;
 }
 
 .contenedor
@@ -60,13 +69,13 @@ html, body
 
 }
 
-
-
 .etiqueta
 {
 	display: block;
 	font-family: "Roboto";
 }
+
+
 
 .select
 {
@@ -87,7 +96,7 @@ html, body
 
 .select-form
 {
-	width: 50%;
+	width: 100%;
 }
 
 .slct-round

@@ -60,6 +60,10 @@ a{
 	transition: 1s;
 	background: #0B6121;
 }
+.center-elements
+{
+	margin: auto;
+}
 
 .contactos
 {
